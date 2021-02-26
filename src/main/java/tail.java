@@ -1,5 +1,5 @@
- package example;
-
+package example;
+ 
 import java.io.*;
 import org.apache.log4j.Logger;
 import org.apache.log4j.BasicConfigurator;
@@ -30,7 +30,7 @@ class ReadFile {
           raf.seek(filePointer);
           try {
             fis = new FileInputStream(raf.getFD());
-			BufferedReader in = null;
+            BufferedReader in = null;
             try {
               in = new BufferedReader(new InputStreamReader(fis));
 
