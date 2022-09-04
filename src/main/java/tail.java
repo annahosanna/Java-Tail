@@ -24,7 +24,6 @@ class ReadFile {
       } else if (fileLength > filePointer) {
         RandomAccessFile raf = null;
         FileInputStream fis = null;
-        BufferedReader in = null;
         try {
           raf = new RandomAccessFile(file.getCanonicalPath(), "r");
           raf.seek(filePointer);
